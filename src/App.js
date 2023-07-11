@@ -1,5 +1,7 @@
-import "./App.css";
 import { useState } from "react";
+import { userContext } from "./Context";
+import Header from "./Header";
+import "./App.css";
 
 function App() {
   const [totalPrice, setTotalPrice] = useState(0);
@@ -11,6 +13,9 @@ function App() {
 
   return (
     <div className="App">
+      <userContext.Provider value ={'สมชาย'}>
+        <Header />
+      </userContext.Provider>
       <div>
         <h3>Cart products {totalItems}</h3>
         <h3>totalprice in cart {totalPrice} Baht</h3>
@@ -18,7 +23,7 @@ function App() {
       <div>
         <img src="p1.jpg" alt="case" width="15%" /> <br />
         case phone price {product1} Baht
-      </div>{" "}
+      </div>
       <br />
       <button
         onClick={() => {
@@ -27,7 +32,7 @@ function App() {
         }}
       >
         Add cart
-      </button>{" "}
+      </button>
       &nbsp;
       <button
         onClick={() => {
@@ -42,7 +47,7 @@ function App() {
       <div>
         <img src="p2.jpg" alt="case" width="15%" /> <br />
         case phone price {product2} Baht
-      </div>{" "}
+      </div>
       <br />
       <button
         onClick={() => {
@@ -51,7 +56,7 @@ function App() {
         }}
       >
         Add cart
-      </button>{" "}
+      </button>
       &nbsp;
       <button
         onClick={() => {
@@ -66,7 +71,7 @@ function App() {
       <div>
         <img src="p3.jpg" alt="case" width="15%" /> <br />
         case phone price {product3} Baht
-      </div>{" "}
+      </div>
       <br />
       <button
         onClick={() => {
@@ -75,7 +80,7 @@ function App() {
         }}
       >
         Add cart
-      </button>{" "}
+      </button>
       &nbsp;
       <button
         onClick={() => {
@@ -90,7 +95,7 @@ function App() {
       <div>
         <img src="p4.jpg" alt="case" width="15%" /> <br />
         case phone price {product4} Baht
-      </div>{" "}
+      </div>
       <br />
       <button
         onClick={() => {
@@ -99,7 +104,7 @@ function App() {
         }}
       >
         Add cart
-      </button>{" "}
+      </button>
       &nbsp;
       <button
         onClick={() => {
