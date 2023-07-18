@@ -14,7 +14,7 @@ export default function Header() {
     <div style={headerStyle}>
       <a href="#">Home</a>&nbsp;&nbsp;
       <a href="#">product</a>&nbsp;&nbsp;
-      <a href="#">Contact Us</a>&nbsp;&nbsp; ชื่อสมาชิก {{ user }}
+      <a href="#">Contact Us</a>&nbsp;&nbsp; ชื่อสมาชิก { user }
     </div>
   );
 }
